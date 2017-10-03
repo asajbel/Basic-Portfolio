@@ -1,19 +1,25 @@
-#name {
+h1.name {
   float: left;
   margin: auto;
   padding: 20px;
   background-color: #4aaaa5;
   color: #ffffff;
-
+  font-size: xx-large;
 }
 
-.nav {
+#top {
+  background-color: #ffffff;
+  border-bottom-style: solid;
+  border-bottom-color: #cccccc;
+}
+
+nav {
   float: right;
   margin: auto;
-  padding: 20px;
+  padding: 25px 10px;
   font-size: x-large;
-  color: #ffffff;
 }
+
 
 .container {
   max-width: 960px;
@@ -24,18 +30,28 @@
 
 #content {
   margin: auto;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 40px 0px;
   position: relative;
+  background-image: url("../images/hypnotize.png");
+  background-position: left top;
+  background-repeat: repeat;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
 }
 
 h1.title {
   color: #4aaaa5;
   font-size: xx-large;
+  margin: 0 0 20px 0;
 }
 
 h2 {
   color: #4aaaa5;
+  margin: 10px 0 20px 0;
 }
 
 img.icon {
@@ -43,29 +59,61 @@ img.icon {
   border: 0;
 }
 
-a.decoless {
-  text-decoration: none;
+img.profile {
+  width: 150px;
+  margin: 0 10px 0 20px;
+  float: left;
 }
 
-div.article {
+a {
+  text-decoration: none;
+  color: #666666;
+  font-family: Arial;
+}
+
+a:visited {
+  color: #666666
+}
+
+#aboutNav {
+
+}
+
+#portNav {
+
+}
+
+#contactNav {
+  
+}
+
+hr {
+  margin-bottom: 20px;
+}
+
+p {
+  margin: 20px 10px;
+}
+
+article {
   max-width: 650px;
   float: left;
   padding: 20px;
   background-color: #ffffff;
+  border-style: solid;
+  border-color: #cccccc;
 }
 
-div.aside  {
+aside  {
   max-width: 270px;
   float: right;
-  padding: 20px;
+  padding: 10px 20px;
   background-color: #ffffff;
   text-align: center;
+  border-style: solid;
+  border-color: #cccccc;
 }
 
-header {
-  height: 77px;
-  background-color: #cccccc;
-}
 
 footer {
   background-color: #666666;
@@ -76,8 +124,8 @@ footer {
   color: #ffffff;
   padding-top: 20px;
   padding-bottom: 20px;
-  position: absolute;
-  bottom: 0;
+  /*position: absolute;
+  bottom: 0;*/
   width: inherit;
   z-index: 10;
 }
