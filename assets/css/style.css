@@ -1,10 +1,15 @@
+
+h1 {
+  font-size: xx-large;
+  font-family: Georgia;
+}
+
 h1.name {
   float: left;
-  margin: auto;
+  margin: 0;
   padding: 20px;
   background-color: #4aaaa5;
   color: #ffffff;
-  font-size: xx-large;
   font-family: Georgia;
 }
 
@@ -12,13 +17,17 @@ h1.name {
   background-color: #ffffff;
   border-bottom-style: solid;
   border-bottom-color: #cccccc;
+  border-bottom-width: 1.5px;
   min-width: 960px;
+  position: relative;
 }
 
 nav {
-  float: right;
   margin: auto;
-  padding: 25px 10px;
+  position: absolute;
+  top: 4px;
+  right: 0;
+  padding: 20px 10px;
   font-size: x-large;
 }
 
@@ -34,7 +43,7 @@ nav {
   margin: auto;
   padding: 20px 0px;
   position: relative;
-  min-height: calc(100vh - 254px);
+  min-height: calc(100vh - 224.5px);
 }
 
 .clearfix::after{
@@ -45,15 +54,17 @@ nav {
 
 h1.title {
   color: #4aaaa5;
-  font-size: xx-large;
   margin: 20px 0 20px 0;
-  font-family: Georgia;
 }
 
 h2 {
+  font-size: x-large;
+  font-family: Georgia;
+}
+
+h2.aside {
   color: #4aaaa5;
   margin: 10px 0 20px 0;
-  font-family: Georgia;
 }
 
 img.icon {
@@ -98,6 +109,7 @@ form {
   width: 600px;
   font-size: large;
   font-family: Helvetica;
+  margin: 0 20px 0 10px;
 }
 
 input {
@@ -135,7 +147,15 @@ a {
 }
 
 a:visited {
-  color: #333333;
+  color: #666666;
+}
+
+a.nav:hover {
+  background-color: #eeeeee;
+}
+
+a.nav {
+  padding: 10px 10px;
 }
 
 #aboutNav {
@@ -154,7 +174,11 @@ hr {
   margin-bottom: 20px;
 }
 
-p {
+p.text {
+  margin: 20px 10px;
+}
+
+p.copytext {
   margin: 20px 10px;
 }
 
@@ -165,6 +189,7 @@ article {
   background-color: #ffffff;
   border-style: solid;
   border-color: #cccccc;
+  border-width: 1.5px;
 }
 
 aside  {
@@ -175,6 +200,7 @@ aside  {
   text-align: center;
   border-style: solid;
   border-color: #cccccc;
+  border-width: 1.5px;
 }
 
 
